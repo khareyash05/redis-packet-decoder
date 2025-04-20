@@ -7,7 +7,7 @@ import (
 	"github.com/khareyash05/redis-packet-decoder/models"
 )
 
-func ParseRedis(buf []byte) ([]models.RedisBodyType, error) {
+func ParseRedisPackets(buf string) ([]models.RedisBodyType, error) {
 	prs := NewParser(string(buf))
 	vals, err := prs.ParseAll()
 	if err != nil {
