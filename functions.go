@@ -8,7 +8,7 @@ import (
 )
 
 func ParseRedisPackets(buf string) ([]models.RedisBodyType, error) {
-	prs := NewParser(string(buf))
+	prs := NewParser(buf)
 	vals, err := prs.ParseAll()
 	if err != nil {
 		return nil, err

@@ -32,6 +32,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-    fmt.Println("Here is the Decoded Packet", decodedPacket)
+    fmt.Println("Here is the Decoded Packet", decodedPacket) // output [{Type:array Size:2 Data:[{Type:string Size:5 Data:hello} {Type:string Size:1 Data:3}]}]
 }
 ```
